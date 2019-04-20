@@ -12,8 +12,7 @@ function crawl_rules(user_rule){
 			user_rule[property] = str
 		}
 	}
-	console.log(user_rule)
-	consoe.log("Rules processed.")
+	console.log("Rules processed.")
 	return user_rule
 }
 

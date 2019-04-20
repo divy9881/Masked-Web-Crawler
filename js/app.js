@@ -19,5 +19,4 @@ url = ["http://quotes.toscrape.com/page/1","hello","http://quotes.toscrape.com/p
 crawler.start_crawling_with(url)
 
 response = crawler.crawl()
-
 result = crawler.parse(response)
