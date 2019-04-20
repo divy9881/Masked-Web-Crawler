@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/DivyPatel9881/Masked-Web-Crawler#readme",
   "dependencies": {
+    "node-html-parser": "^1.1.15",
     "request": "^2.88.0"
   }
 }
