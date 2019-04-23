@@ -1,4 +1,4 @@
-var crawler = require("./masked-web-crawler.js")
+var crawler = require("./index.js")
 
 var nested_rule = crawler.crawl_rules({
 	parent:".tag",
