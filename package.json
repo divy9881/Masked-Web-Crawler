@@ -2,7 +2,7 @@
   "name": "masked-web-crawler",
   "version": "1.0.0",
   "description": "Web Crawler which cannot get blocked.",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
