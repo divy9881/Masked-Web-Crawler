@@ -6,7 +6,7 @@ function request_promise(url){
 			if(error){
 				console.log(error)
 				var res = {
-					err:error,
+					error:error,
 					response:response
 				}
 				return resolve(res)

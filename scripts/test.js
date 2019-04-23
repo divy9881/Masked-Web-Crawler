@@ -1,33 +1,6 @@
-function Hello(){
-	this.hello="HELLO"
-}
+var HTMLParser = require("node-html-parser")
 
-function Display(){
-	console.log(this.hello)
-}
+var parsed = HTMLParser.parse("<ul id='list'><li>Hello World</li></ul>")
 
-function Delete(){
-	delete this.func
-}
-
-function Traverse(){
-	for (property in this){
-		console.log(typeof(this[property]))
-	}
-}
-var obj = {
-	func:Hello,
-	disp:Display,
-	del:Delete,
-	dummy:{
-		name:"Divy"
-	},
-	trav:Traverse
-}
-
-obj.func()
-console.log(obj)
-obj.disp()
-obj.del()
-obj.trav()
-console.log(obj)
+var li = parsed.querySelector("#list  li")
+console.log(li.text)

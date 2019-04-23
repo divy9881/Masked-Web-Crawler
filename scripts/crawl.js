@@ -6,16 +6,18 @@ function request_promise(url){
 	})
 }
 
-async function crawl(){
+function crawl(){
 	urls = this.urls
 	var responses = []
 	for(i in urls){
 		url_no = parseInt(i)+1
 		console.log("Crawling "+url_no+" URL ...")
-		var res = await request_promise(urls[i])
+		var res = request_promise(urls[i])
 		responses.push(res)
 	}
-	return responses
+	return new Promise(function(resolve,reject){
+		return resolve(responses)
+	})
 }
 
 module.exports = crawl

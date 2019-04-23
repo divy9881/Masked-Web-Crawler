@@ -8,7 +8,7 @@ var crawler = {
 	crawl_rules:crawl_rules,
 	commit:commit,
 	start_crawling_with:start_crawling_with,
-	crawl:crawl
+	crawl:crawl,
 	parser:parser
 }
 
